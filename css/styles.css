@@ -609,6 +609,8 @@ img {
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-logo-block {
@@ -616,6 +618,8 @@ img {
     flex-direction: column;
     /* margin-right: 120px; */
     margin-bottom: 72px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-logo-link {
@@ -1189,6 +1193,11 @@ img {
         width: 398px;
     }
 
+    .footer-logo-link {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .modal {
         top: 10%;
         transform: translate(-50%, -10%);
@@ -1276,8 +1285,7 @@ img {
     }
 
     .hero {
-        padding-top: 188px;
-        padding-bottom: 188px;
+        padding: 188px 0 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
             url(../images/hero-bg-tab1x.jpg);
@@ -1350,8 +1358,7 @@ img {
         max-width: 584px;
         flex-direction: row;
         align-items: baseline;
-        gap: 24px;
-        row-gap: 72px;
+        gap: 0 24px;
         justify-content: left;
     }
 
@@ -1363,7 +1370,7 @@ img {
     .footer-logo-block {
         display: flex;
         align-items: start;
-        margin-bottom: unset;
+        margin: 0;
     }
 
     .footer-logo-link {
@@ -1398,8 +1405,16 @@ img {
         margin-top: 72px;
     }
 
+    .footer-label {
+        margin: unset;
+    }
+
     .footer-input {
         width: 264px;
+    }
+
+    .footer-btn {
+        margin: unset;
     }
 
     .modal {
@@ -1538,11 +1553,33 @@ img {
 
     .footer-container {
         display: flex;
+        flex-wrap: nowrap;
         align-items: baseline;
+        gap: unset;
     }
 
     .footer-logo-block {
         margin-right: 120px;
+    }
+
+    .footer-text {
+        min-widht: 264px;
+    }
+
+    .footer-soc-block {
+        margin-right: 80px;
+    }
+
+    .footer-input-block {
+        margin: unset;
+    }
+
+    .footer-form {
+        align-items: flex-end;
+    }
+
+    .footer-btn-icon {
+        margin: unset;
     }
 
 }

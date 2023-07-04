@@ -253,10 +253,10 @@ img {
 
 .mob-address-tel {
     color: #4D5AE5;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
+    line-height: 1.17;
+    letter-spacing: 0.12px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -609,7 +609,6 @@ img {
 
 .footer-container {
     display: flex;
-    flex-direction: column;
 }
 
 .footer-logo-block {
@@ -726,14 +725,15 @@ img {
 }
 
 .footer-label {
-    display: inline-block;
+    display: flex;
+    margin: 0 auto;
 }
 
 .footer-input {
     border-radius: 4px;
     border: 1px solid var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    width: 398px;
+    width: 300px;
     /* width: 284px; */
     height: 40px;
     background-color: transparent;
@@ -1140,6 +1140,15 @@ img {
         max-width: 428px;
     }
 
+    .mob-address-tel {
+        color: #4D5AE5;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: 0.72px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     .mob-icon-list {
         display: flex;
         gap: 56px;
@@ -1176,6 +1185,10 @@ img {
         padding-bottom: 96px;
     }
 
+    .footer-input {
+        width: 398px;
+    }
+
     .modal {
         top: 10%;
         transform: translate(-50%, -10%);
@@ -1186,8 +1199,6 @@ img {
     .modal-title {
         font-size: 16px;
     }
-
-
 
 }
 
@@ -1335,6 +1346,62 @@ img {
         width: 168px;
     }
 
+    .footer-container {
+        max-width: 584px;
+        flex-direction: row;
+        align-items: baseline;
+        gap: 24px;
+        row-gap: 72px;
+        justify-content: left;
+    }
+
+    .foot-block {
+        display: flex;
+        gap: 24px;
+    }
+
+    .footer-logo-block {
+        display: flex;
+        align-items: start;
+        margin-bottom: unset;
+    }
+
+    .footer-logo-link {
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .footer-text {
+        min-width: 264px;
+    }
+
+    .footer-soc-block {
+        margin: 0;
+    }
+
+    .footer-block-title {
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .footer-form {
+        flex-direction: row;
+    }
+
+    .form-title {
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .footer-input-block {
+        width: 496px;
+        margin-top: 72px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
     .modal {
         width: 408px;
         min-height: 584px;
@@ -1472,6 +1539,10 @@ img {
     .footer-container {
         display: flex;
         align-items: baseline;
+    }
+
+    .footer-logo-block {
+        margin-right: 120px;
     }
 
 }
